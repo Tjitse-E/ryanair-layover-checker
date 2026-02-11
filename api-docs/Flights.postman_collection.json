@@ -1,0 +1,400 @@
+{
+  "info": {
+    "_postman_id": "f464ed4f-ca75-41ac-b0d7-e23125821adf",
+    "name": "Flights",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "2168491"
+  },
+  "item": [
+    {
+      "name": "✓ Available dates",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://www.ryanair.com/api/farfnd/v4/oneWayFares/{{origin}}/{{destination}}/availabilities",
+          "protocol": "https",
+          "host": [
+            "www",
+            "ryanair",
+            "com"
+          ],
+          "path": [
+            "api",
+            "farfnd",
+            "v4",
+            "oneWayFares",
+            "{{origin}}",
+            "{{destination}}",
+            "availabilities"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "BER/BRU",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://www.ryanair.com/api/farfnd/3/oneWayFares/{{fromCode}}/{{toCode}}/availabilities",
+              "protocol": "https",
+              "host": [
+                "www",
+                "ryanair",
+                "com"
+              ],
+              "path": [
+                "api",
+                "farfnd",
+                "3",
+                "oneWayFares",
+                "{{fromCode}}",
+                "{{toCode}}",
+                "availabilities"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Jan 2023 02:28:02 GMT"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "max-age=60, s-maxage=300"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 0a624670dff351af866d2f19bde4a312.cloudfront.net (CloudFront), 1.1 4de71b0a42267b098ed30fff0d8a660a.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "FRA56-P5"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "VIE50-C2"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "X-Cache",
+              "value": "Hit from cloudfront"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "X-Amz-Cf-Id",
+              "value": "11iQUO8WRd05n__Be9CIjVM-U3koUwlhTLkg1in1l28kQu_z9-SmXg=="
+            },
+            {
+              "key": "Age",
+              "value": "32"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    \"2023-01-10\",\n    \"2023-01-11\",\n    \"2023-01-12\",\n    \"2023-01-13\",\n    \"2023-01-14\",\n    \"2023-01-15\",\n    \"2023-01-16\",\n    \"2023-01-17\",\n    \"2023-01-18\",\n    \"2023-01-19\",\n    \"2023-01-20\",\n    \"2023-01-21\",\n    \"2023-01-22\",\n    \"2023-01-23\",\n    \"2023-01-24\",\n    \"2023-01-25\",\n    \"2023-01-26\",\n    \"2023-01-27\",\n    \"2023-01-28\",\n    \"2023-01-29\",\n    \"2023-01-30\",\n    \"2023-01-31\",\n    \"2023-02-01\",\n    \"2023-02-02\",\n    \"2023-02-03\",\n    \"2023-02-04\",\n    \"2023-02-05\",\n    \"2023-02-06\",\n    \"2023-02-07\",\n    \"2023-02-08\",\n    \"2023-02-09\",\n    \"2023-02-10\",\n    \"2023-02-11\",\n    \"2023-02-12\",\n    \"2023-02-13\",\n    \"2023-02-14\",\n    \"2023-02-15\",\n    \"2023-02-16\",\n    \"2023-02-17\",\n    \"2023-02-18\",\n    \"2023-02-19\",\n    \"2023-02-20\",\n    \"2023-02-21\",\n    \"2023-02-22\",\n    \"2023-02-23\",\n    \"2023-02-24\",\n    \"2023-02-25\",\n    \"2023-02-26\",\n    \"2023-02-27\",\n    \"2023-02-28\",\n    \"2023-03-01\",\n    \"2023-03-02\",\n    \"2023-03-03\",\n    \"2023-03-04\",\n    \"2023-03-05\",\n    \"2023-03-06\",\n    \"2023-03-07\",\n    \"2023-03-08\",\n    \"2023-03-09\",\n    \"2023-03-10\",\n    \"2023-03-11\",\n    \"2023-03-12\",\n    \"2023-03-13\",\n    \"2023-03-14\",\n    \"2023-03-15\",\n    \"2023-03-16\",\n    \"2023-03-17\",\n    \"2023-03-18\",\n    \"2023-03-19\",\n    \"2023-03-20\",\n    \"2023-03-21\",\n    \"2023-03-22\",\n    \"2023-03-23\",\n    \"2023-03-24\",\n    \"2023-03-25\",\n    \"2023-03-26\",\n    \"2023-03-27\",\n    \"2023-03-28\",\n    \"2023-03-29\",\n    \"2023-03-31\",\n    \"2023-04-01\",\n    \"2023-04-02\",\n    \"2023-04-03\",\n    \"2023-04-04\",\n    \"2023-04-05\",\n    \"2023-04-07\",\n    \"2023-04-08\",\n    \"2023-04-09\",\n    \"2023-04-10\",\n    \"2023-04-11\",\n    \"2023-04-12\",\n    \"2023-04-14\",\n    \"2023-04-15\",\n    \"2023-04-16\",\n    \"2023-04-17\",\n    \"2023-04-18\",\n    \"2023-04-19\",\n    \"2023-04-21\",\n    \"2023-04-22\",\n    \"2023-04-23\",\n    \"2023-04-24\",\n    \"2023-04-25\",\n    \"2023-04-26\",\n    \"2023-04-28\",\n    \"2023-04-29\",\n    \"2023-04-30\",\n    \"2023-05-01\",\n    \"2023-05-02\",\n    \"2023-05-03\",\n    \"2023-05-05\",\n    \"2023-05-06\",\n    \"2023-05-07\",\n    \"2023-05-08\",\n    \"2023-05-09\",\n    \"2023-05-10\",\n    \"2023-05-12\",\n    \"2023-05-13\",\n    \"2023-05-14\",\n    \"2023-05-15\",\n    \"2023-05-16\",\n    \"2023-05-17\",\n    \"2023-05-19\",\n    \"2023-05-20\",\n    \"2023-05-21\",\n    \"2023-05-22\",\n    \"2023-05-23\",\n    \"2023-05-24\",\n    \"2023-05-26\",\n    \"2023-05-27\",\n    \"2023-05-28\",\n    \"2023-05-29\",\n    \"2023-05-30\",\n    \"2023-05-31\",\n    \"2023-06-02\",\n    \"2023-06-03\",\n    \"2023-06-04\",\n    \"2023-06-05\",\n    \"2023-06-06\",\n    \"2023-06-07\",\n    \"2023-06-09\",\n    \"2023-06-10\",\n    \"2023-06-11\",\n    \"2023-06-12\",\n    \"2023-06-13\",\n    \"2023-06-14\",\n    \"2023-06-16\",\n    \"2023-06-17\",\n    \"2023-06-18\",\n    \"2023-06-19\",\n    \"2023-06-20\",\n    \"2023-06-21\",\n    \"2023-06-23\",\n    \"2023-06-24\",\n    \"2023-06-25\",\n    \"2023-06-26\",\n    \"2023-06-27\",\n    \"2023-06-28\",\n    \"2023-06-30\",\n    \"2023-07-01\",\n    \"2023-07-02\",\n    \"2023-07-03\",\n    \"2023-07-04\",\n    \"2023-07-05\",\n    \"2023-07-06\",\n    \"2023-07-07\",\n    \"2023-07-08\",\n    \"2023-07-09\",\n    \"2023-07-10\",\n    \"2023-07-11\",\n    \"2023-07-12\",\n    \"2023-07-13\",\n    \"2023-07-14\",\n    \"2023-07-15\",\n    \"2023-07-16\",\n    \"2023-07-17\",\n    \"2023-07-18\",\n    \"2023-07-19\",\n    \"2023-07-20\",\n    \"2023-07-21\",\n    \"2023-07-22\",\n    \"2023-07-23\",\n    \"2023-07-24\",\n    \"2023-07-25\",\n    \"2023-07-26\",\n    \"2023-07-27\",\n    \"2023-07-28\",\n    \"2023-07-29\",\n    \"2023-07-30\",\n    \"2023-07-31\",\n    \"2023-08-01\",\n    \"2023-08-02\",\n    \"2023-08-03\",\n    \"2023-08-04\",\n    \"2023-08-05\",\n    \"2023-08-06\",\n    \"2023-08-07\",\n    \"2023-08-08\",\n    \"2023-08-09\",\n    \"2023-08-10\",\n    \"2023-08-11\",\n    \"2023-08-12\",\n    \"2023-08-13\",\n    \"2023-08-14\",\n    \"2023-08-15\",\n    \"2023-08-16\",\n    \"2023-08-17\",\n    \"2023-08-18\",\n    \"2023-08-19\",\n    \"2023-08-20\",\n    \"2023-08-21\",\n    \"2023-08-22\",\n    \"2023-08-23\",\n    \"2023-08-24\",\n    \"2023-08-25\",\n    \"2023-08-26\",\n    \"2023-08-27\",\n    \"2023-08-28\",\n    \"2023-08-29\",\n    \"2023-08-30\",\n    \"2023-08-31\",\n    \"2023-09-01\",\n    \"2023-09-02\",\n    \"2023-09-03\",\n    \"2023-09-04\",\n    \"2023-09-05\",\n    \"2023-09-06\",\n    \"2023-09-07\",\n    \"2023-09-08\",\n    \"2023-09-09\",\n    \"2023-09-10\",\n    \"2023-09-11\",\n    \"2023-09-12\",\n    \"2023-09-13\",\n    \"2023-09-14\",\n    \"2023-09-15\",\n    \"2023-09-16\",\n    \"2023-09-17\",\n    \"2023-09-18\",\n    \"2023-09-19\",\n    \"2023-09-20\",\n    \"2023-09-21\",\n    \"2023-09-22\",\n    \"2023-09-23\",\n    \"2023-09-24\",\n    \"2023-09-25\",\n    \"2023-09-26\",\n    \"2023-09-27\",\n    \"2023-09-28\",\n    \"2023-09-29\",\n    \"2023-09-30\",\n    \"2023-10-01\",\n    \"2023-10-02\",\n    \"2023-10-03\",\n    \"2023-10-04\",\n    \"2023-10-06\",\n    \"2023-10-07\",\n    \"2023-10-08\",\n    \"2023-10-09\",\n    \"2023-10-10\",\n    \"2023-10-11\",\n    \"2023-10-13\",\n    \"2023-10-14\",\n    \"2023-10-15\",\n    \"2023-10-16\",\n    \"2023-10-17\",\n    \"2023-10-18\",\n    \"2023-10-20\",\n    \"2023-10-21\",\n    \"2023-10-22\",\n    \"2023-10-23\",\n    \"2023-10-24\",\n    \"2023-10-25\",\n    \"2023-10-27\",\n    \"2023-10-28\"\n]"
+        }
+      ]
+    },
+    {
+      "name": "✓ Availability",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://www.ryanair.com/api/booking/v4/en-gb/availability?ADT=1&CHD=0&DateIn=&DateOut={{departDate}}&Destination={{destination}}&Disc=0&INF=0&Origin={{origin}}&TEEN=0&promoCode=&IncludeConnectingFlights=false&FlexDaysBeforeOut=4&FlexDaysOut=2&FlexDaysBeforeIn=2&FlexDaysIn=2&RoundTrip=false&ToUs=AGREED",
+          "protocol": "https",
+          "host": [
+            "www",
+            "ryanair",
+            "com"
+          ],
+          "path": [
+            "api",
+            "booking",
+            "v4",
+            "en-gb",
+            "availability"
+          ],
+          "query": [
+            {
+              "key": "ADT",
+              "value": "1"
+            },
+            {
+              "key": "CHD",
+              "value": "0"
+            },
+            {
+              "key": "DateIn",
+              "value": ""
+            },
+            {
+              "key": "DateOut",
+              "value": "{{departDate}}"
+            },
+            {
+              "key": "Destination",
+              "value": "{{destination}}"
+            },
+            {
+              "key": "Disc",
+              "value": "0"
+            },
+            {
+              "key": "INF",
+              "value": "0"
+            },
+            {
+              "key": "Origin",
+              "value": "{{origin}}"
+            },
+            {
+              "key": "TEEN",
+              "value": "0"
+            },
+            {
+              "key": "promoCode",
+              "value": ""
+            },
+            {
+              "key": "IncludeConnectingFlights",
+              "value": "false"
+            },
+            {
+              "key": "FlexDaysBeforeOut",
+              "value": "4"
+            },
+            {
+              "key": "FlexDaysOut",
+              "value": "2"
+            },
+            {
+              "key": "FlexDaysBeforeIn",
+              "value": "2"
+            },
+            {
+              "key": "FlexDaysIn",
+              "value": "2"
+            },
+            {
+              "key": "RoundTrip",
+              "value": "false"
+            },
+            {
+              "key": "ToUs",
+              "value": "AGREED"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "BER/BRU",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://www.ryanair.com/api/booking/v4/en-gb/availability?ADT=1&CHD=0&DateIn=&DateOut=2023-01-20&Destination={{toCode}}&Disc=0&INF=0&Origin={{fromCode}}&TEEN=0&promoCode=&IncludeConnectingFlights=false&FlexDaysBeforeOut=4&FlexDaysOut=2&FlexDaysBeforeIn=2&FlexDaysIn=2&RoundTrip=false&ToUs=AGREED",
+              "protocol": "https",
+              "host": [
+                "www",
+                "ryanair",
+                "com"
+              ],
+              "path": [
+                "api",
+                "booking",
+                "v4",
+                "en-gb",
+                "availability"
+              ],
+              "query": [
+                {
+                  "key": "ADT",
+                  "value": "1"
+                },
+                {
+                  "key": "CHD",
+                  "value": "0"
+                },
+                {
+                  "key": "DateIn",
+                  "value": ""
+                },
+                {
+                  "key": "DateOut",
+                  "value": "2023-01-20"
+                },
+                {
+                  "key": "Destination",
+                  "value": "{{toCode}}"
+                },
+                {
+                  "key": "Disc",
+                  "value": "0"
+                },
+                {
+                  "key": "INF",
+                  "value": "0"
+                },
+                {
+                  "key": "Origin",
+                  "value": "{{fromCode}}"
+                },
+                {
+                  "key": "TEEN",
+                  "value": "0"
+                },
+                {
+                  "key": "promoCode",
+                  "value": ""
+                },
+                {
+                  "key": "IncludeConnectingFlights",
+                  "value": "false"
+                },
+                {
+                  "key": "FlexDaysBeforeOut",
+                  "value": "4"
+                },
+                {
+                  "key": "FlexDaysOut",
+                  "value": "2"
+                },
+                {
+                  "key": "FlexDaysBeforeIn",
+                  "value": "2"
+                },
+                {
+                  "key": "FlexDaysIn",
+                  "value": "2"
+                },
+                {
+                  "key": "RoundTrip",
+                  "value": "false"
+                },
+                {
+                  "key": "ToUs",
+                  "value": "AGREED"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 19 Jan 2023 00:59:23 GMT"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,no-store"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "Expires",
+              "value": "-1"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": ".AspNetCore.Session=CfDJ8FXoqHh2dNhFsh%2BBN0s2dw95ATHQjkWc5tGDUUHKR1k%2FbneAARc7kbyJdlIGvvAhuT5T6Ec85WM%2BYXNQKpcV6nwUz%2BYzJPj2G%2BFjdlda8tQuCb4GJqSp%2BsIdGrnenwGMmLOz%2FvARRyQSDfInjYPLJkczD595OLuT0yv6X%2BDCJl%2B6; path=/; samesite=lax; httponly"
+            },
+            {
+              "key": "x-flight-search-token",
+              "value": "TFH4DWIWODF4PANCHZ2IUP4R65KOIRUMO4Y5G7JPP74GW3OZOAZZR3XSVSXPBI3J6MNATZP2IHKPGZJQZEQLUMQV5YIIFNEZWB6QMN75MVGMCGUT7Q35BDBIMQDOXYQT2VAVUNV737ZWRYJL44ZXK3JBRBKATUIIHTZVEXYD3Y2ZJJULGTLSQIYBGBS43IGCWZJZH5UZYI2YMPPJAL5XZI4OWG53CWD2URB46SFL7GYE2NFVJKVXYYQZUNF624AFOUTP2GOGITSURTYN6HR5PB4FPZ7KF63JNELOQH2WL6PAY5VQW5FN74XE6E7IZXMCK3PLJOH3O4UJMDVVPU2SHRIBTBOPEE5RBQJUSXA"
+            },
+            {
+              "key": "X-Kong-Upstream-Latency",
+              "value": "61"
+            },
+            {
+              "key": "X-Kong-Proxy-Latency",
+              "value": "0"
+            },
+            {
+              "key": "Via",
+              "value": "kong/2.8.1, 1.1 3cf68d8be617999c7beade955cf69ddc.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "VIE50-C2"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "key": "X-Amz-Cf-Id",
+              "value": "_SUAhg57ptdZRSRZsmSY6KObkxwt-hDBYoZf9cPKQ1D__MK5iTj3WQ=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"termsOfUse\": \"https://www.ryanair.com/ie/en/corporate/terms-of-use=AGREED\",\n    \"currency\": \"EUR\",\n    \"currPrecision\": 2,\n    \"routeGroup\": \"CITY\",\n    \"tripType\": \"CITY_BREAK\",\n    \"upgradeType\": \"PLUS\",\n    \"trips\": [\n        {\n            \"origin\": \"BER\",\n            \"originName\": \"Berlin (Brandenburg)\",\n            \"destination\": \"BRU\",\n            \"destinationName\": \"Brussels\",\n            \"routeGroup\": \"CITY\",\n            \"tripType\": \"CITY_BREAK\",\n            \"upgradeType\": \"PLUS\",\n            \"dates\": [\n                {\n                    \"dateOut\": \"2023-01-16T00:00:00.000\",\n                    \"flights\": []\n                },\n                {\n                    \"dateOut\": \"2023-01-17T00:00:00.000\",\n                    \"flights\": []\n                },\n                {\n                    \"dateOut\": \"2023-01-18T00:00:00.000\",\n                    \"flights\": []\n                },\n                {\n                    \"dateOut\": \"2023-01-19T00:00:00.000\",\n                    \"flights\": [\n                        {\n                            \"faresLeft\": 2,\n                            \"flightKey\": \"FR~ 166~ ~~BER~01/19/2023 17:55~BRU~01/19/2023 19:25~~\",\n                            \"infantsLeft\": 18,\n                            \"regularFare\": {\n                                \"fareKey\": \"JYH77567AJYF5ZSBYR42HNGLS222AM67LZD72WGHTAJIT32IIQQP3SEV5ZAE2UF2CV26KYZT3YESTSNH36AMJCLWMZKEA374CNHVNAGP765O6VBEDZLYSRVJFUYOED5SKSKRAQJH7TUX62QQ36XREAL2F2J2ULIHH7R6PANDDPN5PCSQVICXOY5HQEH3UWEYJSJRZ7LGXVDZO7BSH54IE6NLFJVXXELQVCDIMHA\",\n                                \"fareClass\": \"B\",\n                                \"fares\": [\n                                    {\n                                        \"type\": \"ADT\",\n                                        \"amount\": 210.99,\n                                        \"count\": 1,\n                                        \"hasDiscount\": false,\n                                        \"publishedFare\": 210.99,\n                                        \"discountInPercent\": 0,\n                                        \"hasPromoDiscount\": false,\n                                        \"discountAmount\": 0,\n                                        \"hasBogof\": false\n                                    }\n                                ]\n                            },\n                            \"operatedBy\": \"Malta Air\",\n                            \"segments\": [\n                                {\n                                    \"segmentNr\": 0,\n                                    \"origin\": \"BER\",\n                                    \"destination\": \"BRU\",\n                                    \"flightNumber\": \"FR 166\",\n                                    \"time\": [\n                                        \"2023-01-19T17:55:00.000\",\n                                        \"2023-01-19T19:25:00.000\"\n                                    ],\n                                    \"timeUTC\": [\n                                        \"2023-01-19T16:55:00.000Z\",\n                                        \"2023-01-19T18:25:00.000Z\"\n                                    ],\n                                    \"duration\": \"01:30\"\n                                }\n                            ],\n                            \"flightNumber\": \"FR 166\",\n                            \"time\": [\n                                \"2023-01-19T17:55:00.000\",\n                                \"2023-01-19T19:25:00.000\"\n                            ],\n                            \"timeUTC\": [\n                                \"2023-01-19T16:55:00.000Z\",\n                                \"2023-01-19T18:25:00.000Z\"\n                            ],\n                            \"duration\": \"01:30\"\n                        }\n                    ]\n                },\n                {\n                    \"dateOut\": \"2023-01-20T00:00:00.000\",\n                    \"flights\": [\n                        {\n                            \"faresLeft\": 1,\n                            \"flightKey\": \"FR~ 166~ ~~BER~01/20/2023 11:20~BRU~01/20/2023 12:50~~\",\n                            \"infantsLeft\": 18,\n                            \"regularFare\": {\n                                \"fareKey\": \"7Q2J7645YSKONR4RCUN5CYCH6G64PSQZJKXJSDFK7FG4LN5G2IBTV4C55MAXXGJ3SYTE36V3HJNGZMKLT3NMTXXGKFIFUDSOWGV2UZMJQVIAMIUE2AQGTO3E4YBDW2XCW2F4F5ANPKELB3BUHRFD5HQUQIBM3QW64DTNCI3UR5RHIF4KLP4HBFVQM4S3ECZU4ORL7PI3UDS6E\",\n                                \"fareClass\": \"R\",\n                                \"fares\": [\n                                    {\n                                        \"type\": \"ADT\",\n                                        \"amount\": 239.76,\n                                        \"count\": 1,\n                                        \"hasDiscount\": false,\n                                        \"publishedFare\": 239.76,\n                                        \"discountInPercent\": 0,\n                                        \"hasPromoDiscount\": false,\n                                        \"discountAmount\": 0,\n                                        \"hasBogof\": false\n                                    }\n                                ]\n                            },\n                            \"operatedBy\": \"Malta Air\",\n                            \"segments\": [\n                                {\n                                    \"segmentNr\": 0,\n                                    \"origin\": \"BER\",\n                                    \"destination\": \"BRU\",\n                                    \"flightNumber\": \"FR 166\",\n                                    \"time\": [\n                                        \"2023-01-20T11:20:00.000\",\n                                        \"2023-01-20T12:50:00.000\"\n                                    ],\n                                    \"timeUTC\": [\n                                        \"2023-01-20T10:20:00.000Z\",\n                                        \"2023-01-20T11:50:00.000Z\"\n                                    ],\n                                    \"duration\": \"01:30\"\n                                }\n                            ],\n                            \"flightNumber\": \"FR 166\",\n                            \"time\": [\n                                \"2023-01-20T11:20:00.000\",\n                                \"2023-01-20T12:50:00.000\"\n                            ],\n                            \"timeUTC\": [\n                                \"2023-01-20T10:20:00.000Z\",\n                                \"2023-01-20T11:50:00.000Z\"\n                            ],\n                            \"duration\": \"01:30\"\n                        }\n                    ]\n                },\n                {\n                    \"dateOut\": \"2023-01-21T00:00:00.000\",\n                    \"flights\": [\n                        {\n                            \"faresLeft\": 2,\n                            \"flightKey\": \"FR~ 166~ ~~BER~01/21/2023 10:55~BRU~01/21/2023 12:25~~\",\n                            \"infantsLeft\": 18,\n                            \"regularFare\": {\n                                \"fareKey\": \"7Q2J7645YSKONR4RCUN5CYCH6G64PSQZJKXJSDFK7FG4LN5G2IBTV4C55MAXXGJ3SYTE36V3HJNGZ6KEA2JBORS5QFAK3SO2HWOOA33CP4T6FUJ524KRLEWGJMECQLDBF3ARYAKDYZ3IFZED4H2TGIHCQOZX3LDYWV33VG4VVPAEGZXQGGHMXSHVSNVBAYHH6YAHLPQTV2YGK\",\n                                \"fareClass\": \"R\",\n                                \"fares\": [\n                                    {\n                                        \"type\": \"ADT\",\n                                        \"amount\": 239.76,\n                                        \"count\": 1,\n                                        \"hasDiscount\": false,\n                                        \"publishedFare\": 239.76,\n                                        \"discountInPercent\": 0,\n                                        \"hasPromoDiscount\": false,\n                                        \"discountAmount\": 0,\n                                        \"hasBogof\": false\n                                    }\n                                ]\n                            },\n                            \"operatedBy\": \"Malta Air\",\n                            \"segments\": [\n                                {\n                                    \"segmentNr\": 0,\n                                    \"origin\": \"BER\",\n                                    \"destination\": \"BRU\",\n                                    \"flightNumber\": \"FR 166\",\n                                    \"time\": [\n                                        \"2023-01-21T10:55:00.000\",\n                                        \"2023-01-21T12:25:00.000\"\n                                    ],\n                                    \"timeUTC\": [\n                                        \"2023-01-21T09:55:00.000Z\",\n                                        \"2023-01-21T11:25:00.000Z\"\n                                    ],\n                                    \"duration\": \"01:30\"\n                                }\n                            ],\n                            \"flightNumber\": \"FR 166\",\n                            \"time\": [\n                                \"2023-01-21T10:55:00.000\",\n                                \"2023-01-21T12:25:00.000\"\n                            ],\n                            \"timeUTC\": [\n                                \"2023-01-21T09:55:00.000Z\",\n                                \"2023-01-21T11:25:00.000Z\"\n                            ],\n                            \"duration\": \"01:30\"\n                        }\n                    ]\n                },\n                {\n                    \"dateOut\": \"2023-01-22T00:00:00.000\",\n                    \"flights\": [\n                        {\n                            \"faresLeft\": 1,\n                            \"flightKey\": \"FR~ 166~ ~~BER~01/22/2023 19:05~BRU~01/22/2023 20:35~~\",\n                            \"infantsLeft\": 17,\n                            \"regularFare\": {\n                                \"fareKey\": \"PDXZ7C7MWTU4KJAFH42DQKMKSJABSBGMUG2KPKR4OQHSCRWJUVA5OJD75UJMO7WTZKADMU4ZC6CU7KVH5AXSNI2Z7WZN4LTW4IL43ZMBDTXGAJDSSXOCVC5HU6JFZCWZDZEOGK6ENRKAO5EKE6JWWO6CHQKXE7HULI4AWVFEDZHYIY6UZCONZVQ4PM7ARREVAVJ2C2AFKT72H74Y5MWAFTVTJ5RC372FQNO7PZI\",\n                                \"fareClass\": \"P\",\n                                \"fares\": [\n                                    {\n                                        \"type\": \"ADT\",\n                                        \"amount\": 132.62,\n                                        \"count\": 1,\n                                        \"hasDiscount\": false,\n                                        \"publishedFare\": 132.62,\n                                        \"discountInPercent\": 0,\n                                        \"hasPromoDiscount\": false,\n                                        \"discountAmount\": 0,\n                                        \"hasBogof\": false\n                                    }\n                                ]\n                            },\n                            \"operatedBy\": \"Malta Air\",\n                            \"segments\": [\n                                {\n                                    \"segmentNr\": 0,\n                                    \"origin\": \"BER\",\n                                    \"destination\": \"BRU\",\n                                    \"flightNumber\": \"FR 166\",\n                                    \"time\": [\n                                        \"2023-01-22T19:05:00.000\",\n                                        \"2023-01-22T20:35:00.000\"\n                                    ],\n                                    \"timeUTC\": [\n                                        \"2023-01-22T18:05:00.000Z\",\n                                        \"2023-01-22T19:35:00.000Z\"\n                                    ],\n                                    \"duration\": \"01:30\"\n                                }\n                            ],\n                            \"flightNumber\": \"FR 166\",\n                            \"time\": [\n                                \"2023-01-22T19:05:00.000\",\n                                \"2023-01-22T20:35:00.000\"\n                            ],\n                            \"timeUTC\": [\n                                \"2023-01-22T18:05:00.000Z\",\n                                \"2023-01-22T19:35:00.000Z\"\n                            ],\n                            \"duration\": \"01:30\"\n                        }\n                    ]\n                }\n            ]\n        }\n    ],\n    \"serverTimeUTC\": \"2023-01-19T00:59:23.384Z\"\n}"
+        }
+      ]
+    }
+  ]
+}
